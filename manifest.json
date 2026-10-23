@@ -1,0 +1,132 @@
+{
+  "manifest_version": 1,
+  "id": "sopro",
+  "version": "26.10.1",
+  "display_name": "Sopro (offline, voice clone, 4 languages)",
+  "summary": "Sopro V2 Turbo: speaks English, European Portuguese, French and German at 24 kHz in the speaker's own voice, cloned from a few seconds of the video, or in one of 8 preset voices. Runs on the CPU, about twice as fast as real time; the 336 MB model downloads on the first line.",
+  "author": "Subtitld",
+  "homepage": "https://github.com/Subtitld/addon-sopro",
+  "license": "Apache-2.0 (add-on, Sopro code and weights); preset clips public domain (LibriVox) and CC-BY-4.0 (LibriTTS-R)",
+  "executable": "bin/sopro-addon",
+  "protocol": 1,
+  "startup_timeout_sec": 30,
+  "platforms": [
+    "linux",
+    "macos",
+    "windows"
+  ],
+  "tasks": [
+    "tts.synthesize"
+  ],
+  "compute": "cpu",
+  "voice_clone": true,
+  "languages": [
+    "en",
+    "pt",
+    "fr",
+    "de"
+  ],
+  "voices": [
+    {
+      "id": "sopro-clone",
+      "language": "*",
+      "display_name": "Speaker's own voice (cloned from the video)",
+      "sample_rate": 24000,
+      "requires": [
+        "voice_ref_audio"
+      ]
+    },
+    {
+      "id": "sopro-en-woman",
+      "language": "*",
+      "display_name": "English woman",
+      "sample_rate": 24000
+    },
+    {
+      "id": "sopro-en-man",
+      "language": "*",
+      "display_name": "English man",
+      "sample_rate": 24000
+    },
+    {
+      "id": "sopro-pt-woman",
+      "language": "*",
+      "display_name": "Portuguese woman",
+      "sample_rate": 24000
+    },
+    {
+      "id": "sopro-pt-man",
+      "language": "*",
+      "display_name": "Portuguese man",
+      "sample_rate": 24000
+    },
+    {
+      "id": "sopro-fr-woman",
+      "language": "*",
+      "display_name": "French woman",
+      "sample_rate": 24000
+    },
+    {
+      "id": "sopro-fr-man",
+      "language": "*",
+      "display_name": "French man",
+      "sample_rate": 24000
+    },
+    {
+      "id": "sopro-de-woman",
+      "language": "*",
+      "display_name": "German woman",
+      "sample_rate": 24000
+    },
+    {
+      "id": "sopro-de-man",
+      "language": "*",
+      "display_name": "German man",
+      "sample_rate": 24000
+    }
+  ],
+  "models": [
+    {
+      "id": "sopro-v2-turbo",
+      "display_name": "Sopro V2 Turbo (120M, ONNX)",
+      "repo": "samuel-vitorino/sopro-v2-turbo-onnx",
+      "revision": "9fe97bddf52ed785af3634db86a032bb7e07bf18",
+      "size_mb": 336,
+      "license": "Apache-2.0",
+      "bundled": false,
+      "default": true
+    }
+  ],
+  "disk_required_mb": 400,
+  "ram_required_mb": 1536,
+  "config_schema": {
+    "fields": [
+      {
+        "key": "threads",
+        "type": "int",
+        "label": "CPU threads",
+        "default": 0,
+        "min": 0,
+        "max": 64,
+        "step": 1,
+        "help": "0 picks half the logical processors, at most 8."
+      },
+      {
+        "key": "variation",
+        "type": "number",
+        "label": "Variation",
+        "default": 0.8,
+        "min": 0.0,
+        "max": 1.5,
+        "step": 0.05,
+        "help": "How freely Sopro speaks: lower is steadier and flatter, higher livelier but with more slips. 0.8 is Sopro's default."
+      },
+      {
+        "key": "voice_ref_audio",
+        "type": "file",
+        "label": "Fallback reference clip",
+        "help": "Cloned by the speaker's own voice when Subtitld has no clip of the speaker to send: 5 to 20 seconds of one person speaking, WAV preferred."
+      }
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "subtitld-addon-sopro"
+version = "26.10.1"
+description = "Subtitld add-on: offline voice-cloning text-to-speech with Sopro V2 Turbo"
+readme = "README.md"
+license = { text = "Apache-2.0" }
+authors = [{ name = "Subtitld", email = "jbopen@gmail.com" }]
+requires-python = ">=3.10"
+
+# ONNX Runtime runs upstream's ONNX export; the text front end, the signal
+# processing and the generation loop are the add-on's own (numpy), and the
+# downloads use the standard library. Pinned: the graphs were checked with it.
+dependencies = [
+    "onnxruntime==1.31.0",
+    "numpy>=1.26,<3",  # constraints.txt pins the release build
+]
+
+[project.optional-dependencies]
+build = ["pyinstaller>=6.10"]
+dev = ["pytest>=7.4"]
+
+[project.scripts]
+sopro-addon = "sopro_addon.__main__:main"
+
+[tool.setuptools]
+packages = ["sopro_addon"]
+
+[tool.setuptools.package-data]
+sopro_addon = ["pins.json", "presets/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["model: needs the Sopro model (downloads 336 MB on first run)"]

@@ -1,0 +1,13 @@
+"""Sopro add-on for Subtitld.
+
+Copyright 2026 Subtitld contributors
+SPDX-License-Identifier: Apache-2.0
+
+The package exists so the entry point can run both from source
+(`python -m sopro_addon`) and as the frozen PyInstaller binary
+(`bin/sopro-addon`).
+"""
+
+__version__ = '26.10.1'
+ADDON_ID = 'sopro'
+PROTOCOL_VERSION = 1

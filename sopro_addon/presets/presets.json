@@ -1,0 +1,102 @@
+{
+ "presets": [
+  {
+   "id": "sopro-en-woman",
+   "display_name": "English woman",
+   "language": "en",
+   "clip": "en-woman.wav",
+   "source": "LibriTTS-R",
+   "speaker": "4507",
+   "utterance": "4507_16021_000033_000000",
+   "f0_hz": 206.9
+  },
+  {
+   "id": "sopro-en-man",
+   "display_name": "English man",
+   "language": "en",
+   "clip": "en-man.wav",
+   "source": "LibriTTS-R",
+   "speaker": "7127",
+   "utterance": "7127_75946_000037_000001",
+   "f0_hz": 122.4
+  },
+  {
+   "id": "sopro-pt-woman",
+   "display_name": "Portuguese woman",
+   "language": "pt",
+   "clip": "pt-woman.wav",
+   "source": "LibriVox via Multilingual LibriSpeech",
+   "speaker": "12114",
+   "utterance": "12114_10229_000000",
+   "f0_hz": 240.0,
+   "recording": "http://www.archive.org/download/canaa_1901_librivox/canaa_06_aranha_64kb.mp3",
+   "start_sec": 757.14,
+   "end_sec": 774.12
+  },
+  {
+   "id": "sopro-pt-man",
+   "display_name": "Portuguese man",
+   "language": "pt",
+   "clip": "pt-man.wav",
+   "source": "LibriVox via Multilingual LibriSpeech",
+   "speaker": "12287",
+   "utterance": "12287_12742_000000",
+   "f0_hz": 134.1,
+   "recording": "http://www.archive.org/download/cartas_de_inglaterra_1805_librivox/cartasdeinglaterra_08_queiros_64kb.mp3",
+   "start_sec": 598.53,
+   "end_sec": 608.91
+  },
+  {
+   "id": "sopro-fr-woman",
+   "display_name": "French woman",
+   "language": "fr",
+   "clip": "fr-woman.wav",
+   "source": "LibriVox via Multilingual LibriSpeech",
+   "speaker": "2154",
+   "utterance": "2154_1167_000000",
+   "f0_hz": 187.5,
+   "recording": "http://www.archive.org/download/fables_lafontaine_04_0712_librivox/fables_04_07_lafontaine_64kb.mp3",
+   "start_sec": 14.41,
+   "end_sec": 32.02
+  },
+  {
+   "id": "sopro-fr-man",
+   "display_name": "French man",
+   "language": "fr",
+   "clip": "fr-man.wav",
+   "source": "LibriVox via Multilingual LibriSpeech",
+   "speaker": "2216",
+   "utterance": "2216_1259_000000",
+   "f0_hz": 109.1,
+   "recording": "http://www.archive.org/download/comte_monte_cristo_jg_librivox/montecristo_049_dumas_64kb.mp3",
+   "start_sec": 256.23,
+   "end_sec": 272.7
+  },
+  {
+   "id": "sopro-de-woman",
+   "display_name": "German woman",
+   "language": "de",
+   "clip": "de-woman.wav",
+   "source": "LibriVox via Multilingual LibriSpeech",
+   "speaker": "3588",
+   "utterance": "3588_1614_000000",
+   "f0_hz": 224.3,
+   "recording": "http://www.archive.org/download/20000_meilen_1001_librivox/20000_meilen_2_23_verne_64kb.mp3",
+   "start_sec": 219.75,
+   "end_sec": 233.4
+  },
+  {
+   "id": "sopro-de-man",
+   "display_name": "German man",
+   "language": "de",
+   "clip": "de-man.wav",
+   "source": "LibriVox via Multilingual LibriSpeech",
+   "speaker": "3040",
+   "utterance": "3040_2130_000000",
+   "f0_hz": 130.4,
+   "recording": "http://www.archive.org/download/fliegende_hollaender_0903_librivox/fliegende-hollaender_08_wolff_64kb.mp3",
+   "start_sec": 248.95,
+   "end_sec": 265.6
+  }
+ ]
+}

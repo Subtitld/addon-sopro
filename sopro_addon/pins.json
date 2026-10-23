@@ -1,0 +1,72 @@
+{
+ "repo": "samuel-vitorino/sopro-v2-turbo-onnx",
+ "revision": "9fe97bddf52ed785af3634db86a032bb7e07bf18",
+ "export_revision": "7a645ef2aaecfea9",
+ "files": [
+  {
+   "path": "manifest.json",
+   "size": 16684,
+   "sha256": "7320ee142124ce34d1431b2f109a348bf8de1e5e0fc28089004c7a8f80b0e812"
+  },
+  {
+   "path": "tokenizer.json",
+   "size": 309098,
+   "sha256": "199e35f8f37235101138c5231464769ad4bf9b6dbecb9ae3b96b225f6c012394"
+  },
+  {
+   "path": "common/reference.onnx",
+   "size": 318971,
+   "sha256": "fb6f3def33e918a590d0a2d66697a5c8178cb5b252eb013f122a696959a2a0b3"
+  },
+  {
+   "path": "common/semantic_prefix.onnx",
+   "size": 30037,
+   "sha256": "2f0feabb47c3af038c1ed0127d907be674996e64c7a159265ffe181823f009dd"
+  },
+  {
+   "path": "common/semantic_core.onnx",
+   "size": 444545,
+   "sha256": "352443a2217f730fc08bad3e29c0d6683dcedde568dfe0f8fa58a8b46ef15fd1"
+  },
+  {
+   "path": "wasm-uint8/acoustic_condition.onnx",
+   "size": 22045,
+   "sha256": "51c6da2a7b3813b7d0d64aef1ef9cc28cdb41064ed5044877f54d4fcb8b6eede"
+  },
+  {
+   "path": "wasm-uint8/acoustic_offline_2.onnx",
+   "size": 718899,
+   "sha256": "93efe76b3ec7619071b8cee242fa77d81db91896317f2603af4cdeb0ce745764"
+  },
+  {
+   "path": "wasm-uint8/vocoder.onnx",
+   "size": 281252,
+   "sha256": "dfa4793d1f8a00b2950df821c25813860826b1bcfb6f49fdb1b6c28c5627a1be"
+  },
+  {
+   "path": "common/weights-reference.bin",
+   "size": 94666752,
+   "sha256": "5ae19423d496681eed622c9ae372cdf60df9a5be106964c1f483eecd6cbe3ca1"
+  },
+  {
+   "path": "common/weights-semantic.bin",
+   "size": 96626752,
+   "sha256": "91308fb72a6cc5a452f47e6cb5f3156970e39ef8a54690bbf98e116f11c1c75d"
+  },
+  {
+   "path": "wasm-uint8/weights-condition.bin",
+   "size": 25414400,
+   "sha256": "a4fb7fdc67246d7638d84c72b5b5d4888cc4bbda43944f2405d50fe9c806c359"
+  },
+  {
+   "path": "wasm-uint8/weights-acoustic.bin",
+   "size": 103205888,
+   "sha256": "66a12561ea7d3a451d4e70be4713cbc03787566804bb137c6f07ccb22c1aceb0"
+  },
+  {
+   "path": "wasm-uint8/weights-vocoder.bin",
+   "size": 13723840,
+   "sha256": "9d8dea8079be0ef36e5a33de233a9144d060afab4a959b73fdfaee166a5fb235"
+  }
+ ]
+}
