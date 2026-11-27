@@ -1,7 +1,7 @@
 {
   "manifest_version": 1,
   "id": "sopro",
-  "version": "26.10.1",
+  "version": "26.11.1",
   "display_name": "Sopro (offline, voice clone, 4 languages)",
   "summary": "Sopro V2 Turbo: speaks English, European Portuguese, French and German at 24 kHz in the speaker's own voice, cloned from a few seconds of the video, or in one of 8 preset voices. Runs on the CPU, about twice as fast as real time; the 336 MB model downloads on the first line.",
   "author": "Subtitld",

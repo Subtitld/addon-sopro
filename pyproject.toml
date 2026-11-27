@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "subtitld-addon-sopro"
-version = "26.10.1"
+version = "26.11.1"
 description = "Subtitld add-on: offline voice-cloning text-to-speech with Sopro V2 Turbo"
 readme = "README.md"
 license = { text = "Apache-2.0" }
